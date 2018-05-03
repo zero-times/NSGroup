@@ -5,7 +5,8 @@ https://github.com/ZHShare/OC_UIExtension.git
 使用代码:
 import ...
 
-NSGroup.maker(^(NSGroupMaker * maker) {
+ 
+    NSGroup.maker(^(NSGroupMaker * maker) {
         maker
         .setGlobalQueue(^(void) {
             for (int i = 0; i < 10; i++) {
@@ -31,6 +32,7 @@ NSGroup.maker(^(NSGroupMaker * maker) {
             NSLog(@"耗时操作执行完毕 %@", [NSThread currentThread]);
         });
     });
+  
 
 打印信息:
 ...
