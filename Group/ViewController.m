@@ -20,7 +20,6 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     NSGroup.maker(^(NSGroupMaker * maker) {
-        
         maker
         .setGlobalQueue(^(void) {
             for (int i = 0; i < 10; i++) {
